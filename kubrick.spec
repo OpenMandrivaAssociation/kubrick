@@ -8,6 +8,8 @@ License:	GPLv2 and LGPLv2 and GFDL
 Url:		http://www.kde.org/applications/games/kubrick/
 Source:		ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	libkdegames-devel
+BuildRequires:	pkgconfig(gl)
+BuildRequires:	pkgconfig(glu)
 
 %description
 Kubrick is a game based on the Rubik's Cube™ puzzle.
@@ -39,6 +41,7 @@ pretty patterns and solution moves, or you can make up your own puzzles.
 %changelog
 * Wed Jun 05 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.10.4-1
 - New version 4.10.4
+- Update BuildRequires
 
 * Tue May 07 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.10.3-1
 - New version 4.10.3
