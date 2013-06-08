@@ -1,8 +1,8 @@
+Summary:	Game based on Rubik's Cube
 Name:		kubrick
 Version:	4.10.4
 Release:	1
 Epoch:		1
-Summary:	Game based on Rubik's Cube
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
 Url:		http://www.kde.org/applications/games/kubrick/
