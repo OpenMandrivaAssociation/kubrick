@@ -1,6 +1,6 @@
 Summary:	Game based on Rubik's Cube
 Name:		kubrick
-Version:	4.11.0
+Version:	4.11.1
 Release:	1
 Epoch:		1
 Group:		Graphical desktop/KDE
@@ -39,6 +39,9 @@ pretty patterns and solution moves, or you can make up your own puzzles.
 %makeinstall_std -C build
 
 %changelog
+* Tue Sep 03 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.11.1-1
+- New version 4.11.1
+
 * Wed Aug 14 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.11.0-1
 - New version 4.11.0
 
