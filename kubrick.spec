@@ -22,7 +22,7 @@ pretty patterns and solution moves, or you can make up your own puzzles.
 
 %files
 %{_bindir}/kubrick
-%{_datadir}/applications/kubrick.desktop
+%{_datadir}/applications/kde4/kubrick.desktop
 %{_datadir}/apps/kubrick
 %doc %{_docdir}/*/*/kubrick
 %{_iconsdir}/hicolor/*/apps/kubrick.png
