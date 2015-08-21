@@ -1,7 +1,7 @@
 Summary:	Game based on Rubik's Cube
 Name:		kubrick
-Version:	15.04.3
-Release:	2
+Version:	15.08.0
+Release:	1
 Epoch:		1
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
@@ -33,7 +33,8 @@ pretty patterns and solution moves, or you can make up your own puzzles.
 %setup -q
 
 %build
-%cmake_kde4
+%cmake_kde4 \
+	-DCMAKE_MINIMUM_REQUIRED_VERSION=3.1
 %make
 
 %install
