@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   kubrick-15.08.0.tar.xz: 387932788a369aa924b15ab6e886a3b832c1d53b
+sources:
+  kubrick-15.08.1.tar.xz: 6db2ec4b75a76ab1eb8bcc2f100f2a9fa7b45d45
