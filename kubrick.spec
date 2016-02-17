@@ -1,6 +1,6 @@
 Summary:	Game based on Rubik's Cube
 Name:		kubrick
-Version:	15.12.1
+Version:	15.12.2
 Release:	1
 Epoch:		1
 Group:		Graphical desktop/KDE
