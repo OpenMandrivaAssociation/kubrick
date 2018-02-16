@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   kubrick-17.12.1.tar.xz: 11b003da39946265b227aaceaae931726945375a
+sources:
+  kubrick-17.12.2.tar.xz: 836f1d6121b4be12f2f3e967eeba1aadd64309e0
