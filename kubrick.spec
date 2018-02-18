@@ -13,6 +13,7 @@ BuildRequires:	pkgconfig(glu)
 BuildRequires:	cmake(KF5KDEGames)
 BuildRequires:	cmake ninja cmake(ECM)
 BuildRequires:	cmake(KF5Config) cmake(KF5ConfigWidgets) cmake(KF5CoreAddons) cmake(KF5Crash) cmake(KF5I18n) cmake(KF5WidgetsAddons) cmake(KF5XmlGui) cmake(Qt5Core) cmake(Qt5Gui) cmake(Qt5OpenGL) cmake(Qt5Svg) cmake(Qt5Widgets)
+BuildRequires:	cmake(KF5DocTools)
 
 %description
 Kubrick is a game based on the Rubik's Cube™ puzzle.
