@@ -10,9 +10,22 @@ Url:		http://www.kde.org/applications/games/kubrick/
 Source0:	http://download.kde.org/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	pkgconfig(gl)
 BuildRequires:	pkgconfig(glu)
+BuildRequires:	cmake ninja
+BuildRequires:	cmake(ECM)
+BuildRequires:	cmake(Qt5Widgets)
+BuildRequires:	cmake(Qt5Svg)
+BuildRequires:	cmake(Qt5OpenGL)
+BuildRequires:	cmake(KF5Config)
+BuildRequires:	cmake(KF5ConfigWidgets)
+BuildRequires:	cmake(KF5CoreAddons)
+BuildRequires:	cmake(KF5Crash)
+BuildRequires:	cmake(KF5DocTools)
+BuildRequires:	cmake(KF5I18n)
+BuildRequires:	cmake(KF5KIO)
+BuildRequires:	cmake(KF5WidgetsAddons)
+BuildRequires:	cmake(KF5XmlGui)
 BuildRequires:	cmake(KF5KDEGames)
-BuildRequires:	cmake ninja cmake(ECM)
-BuildRequires:	cmake(KF5Config) cmake(KF5ConfigWidgets) cmake(KF5CoreAddons) cmake(KF5Crash) cmake(KF5I18n) cmake(KF5WidgetsAddons) cmake(KF5XmlGui) cmake(Qt5Core) cmake(Qt5Gui) cmake(Qt5OpenGL) cmake(Qt5Svg) cmake(Qt5Widgets)
+BuildRequires:	cmake(OpenGL)
 BuildRequires:	cmake(KF5DocTools)
 
 %description
