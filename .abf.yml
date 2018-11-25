@@ -1,4 +1,2 @@
-removed_sources:
-  kubrick-17.12.1.tar.xz: 11b003da39946265b227aaceaae931726945375a
 sources:
-  kubrick-18.08.3.tar.xz: 507988794e9fc46d85d1d319cd18f2dddc879547
+  kubrick-18.11.80.tar.xz: ca579c12b9703ad74ffd9e2f0ce8982db2c72802

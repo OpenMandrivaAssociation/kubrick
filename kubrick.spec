@@ -1,7 +1,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 Summary:	Game based on Rubik's Cube
 Name:		kubrick
-Version:	 18.08.3
+Version:	 18.11.80
 Release:	1
 Epoch:		1
 Group:		Graphical desktop/KDE
@@ -37,6 +37,7 @@ selection of puzzles at several levels of difficulty, as well as demos of
 pretty patterns and solution moves, or you can make up your own puzzles.
 
 %files -f %{name}.lang
+%{_sysconfdir}/xdg/kubrick.categories
 %{_bindir}/kubrick
 %{_datadir}/applications/org.kde.kubrick.desktop
 %{_datadir}/kubrick
