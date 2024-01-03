@@ -2,7 +2,7 @@
 Summary:	Game based on Rubik's Cube
 Name:		kubrick
 Version:	23.08.4
-Release:	1
+Release:	2
 Epoch:		1
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
