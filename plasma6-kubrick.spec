@@ -1,12 +1,19 @@
+%define git 20240218
+%define gitbranch release/24.02
+%define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 Summary:	Game based on Rubik's Cube
 Name:		plasma6-kubrick
-Version:	24.01.95
-Release:	1
+Version:	24.01.96
+Release:	%{?git:0.%{git}.}1
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
 Url:		http://www.kde.org/applications/games/kubrick/
+%if 0%{?git:1}
+Source0:	https://invent.kde.org/games/kubrick/-/archive/%{gitbranch}/kubrick-%{gitbranchd}.tar.bz2#/kubrick-%{git}.tar.bz2
+%else
 Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/kubrick-%{version}.tar.xz
+%endif
 BuildRequires:	pkgconfig(gl)
 BuildRequires:	pkgconfig(glu)
 BuildRequires:	cmake ninja
@@ -47,7 +54,7 @@ pretty patterns and solution moves, or you can make up your own puzzles.
 #------------------------------------------------------------------------------
 
 %prep
-%autosetup -p1 -n kubrick-%{?git:master}%{!?git:%{version}}
+%autosetup -p1 -n kubrick-%{?git:%{gitbranchd}}%{!?git:%{version}}
 
 %build
 %cmake \
