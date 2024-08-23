@@ -4,7 +4,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 Summary:	Game based on Rubik's Cube
 Name:		plasma6-kubrick
-Version:	24.05.2
+Version:	24.08.0
 Release:	%{?git:0.%{git}.}1
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
@@ -44,6 +44,7 @@ selection of puzzles at several levels of difficulty, as well as demos of
 pretty patterns and solution moves, or you can make up your own puzzles.
 
 %files -f %{name}.lang
+%{_datadir}/qlogging-categories6/kubrick.renamecategories
 %{_datadir}/qlogging-categories6/kubrick.categories
 %{_bindir}/kubrick
 %{_datadir}/applications/org.kde.kubrick.desktop
