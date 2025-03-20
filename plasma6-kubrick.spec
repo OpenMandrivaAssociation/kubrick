@@ -5,7 +5,7 @@
 Summary:	Game based on Rubik's Cube
 Name:		plasma6-kubrick
 Version:	24.12.3
-Release:	%{?git:0.%{git}.}1
+Release:	%{?git:0.%{git}.}2
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
 Url:		https://www.kde.org/applications/games/kubrick/
