@@ -4,7 +4,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 Summary:	Game based on Rubik's Cube
 Name:		kubrick
-Version:	25.04.0
+Version:	25.04.3
 Release:	%{?git:0.%{git}.}1
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
@@ -35,6 +35,11 @@ BuildRequires:	cmake(KDEGames6)
 BuildRequires:	cmake(OpenGL)
 BuildRequires:	cmake(KF6DocTools)
 
+%rename plasma6-kubrick
+
+BuildSystem:	cmake
+BuildOption:	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
+
 %description
 Kubrick is a game based on the Rubik's Cube™ puzzle.
 
@@ -51,18 +56,3 @@ pretty patterns and solution moves, or you can make up your own puzzles.
 %{_datadir}/kubrick
 %{_datadir}/metainfo/*.xml
 %{_iconsdir}/hicolor/*/apps/kubrick.png
-
-#------------------------------------------------------------------------------
-
-%prep
-%autosetup -p1 -n kubrick-%{?git:%{gitbranchd}}%{!?git:%{version}}
-
-%build
-%cmake \
-	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
-	-G Ninja
-%ninja
-
-%install
-%ninja_install -C build
-%find_lang %{name} --all-name --with-html
